@@ -10,7 +10,7 @@ function App() {
   const [{user}, dispatch] = useStateValue();
   return (
     <div className="app">
-        {!user ? (
+        {/* {!user ? (
           <Login/>
         ):(
           <div className="app__body">
@@ -26,7 +26,17 @@ function App() {
               </Switch>            
             </Router>
           </div>
-        )}
+        )} */}
+        <div className="app__body">
+            <Router>
+              <Sidebar/>
+              <Switch>
+                <Route path="/">                  
+                  <Chat/>
+                </Route>              
+              </Switch>            
+            </Router>
+          </div>
         
     </div>
   );

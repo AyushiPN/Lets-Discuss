@@ -10,6 +10,7 @@ function App() {
   const [{user}, dispatch] = useStateValue();
   return (
     <div className="app">
+
         {!user ? (
           <Login/>
         ):(
@@ -27,6 +28,7 @@ function App() {
             </Router>
           </div>
         )}
+        
         
     </div>
   );
